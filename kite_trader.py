@@ -13,7 +13,7 @@ from keras.layers import Dense,LSTM
 from sklearn.preprocessing import MinMaxScaler
 
 
----Code to be changed according to your own app's API---
+---Part of Code to be changed according to your own app's API and methods---
 
 class KiteApp:
 

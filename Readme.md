@@ -23,4 +23,4 @@ At the watchlist, you have the option to give specific stock names, take the low
 5. adf_test : For performing augmented dickey fuller test
 6. create_dataset : to create a X,y dataset to plug into the neural network
 
-I will upload my own results to this repo as time goes on. As of updating this, I have had 7 back to back profits of ~ 1300 - 3400 each.
+As of updating this, I have had 7 back to back profits of ~ 1300 - 3400 each.

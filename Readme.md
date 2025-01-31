@@ -1,6 +1,3 @@
-
-Here's a professional GitHub README.md for your project:
-
 🚀 Bitcoin Price Prediction Using LSTM
 
 Author: Alec Stovari, 2025

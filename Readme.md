@@ -1,26 +1,45 @@
-# HELLO ! And welcome to the Github repo
-I should add some documentation to this.
-Initially, this was made considering an app called Kite, which is a very easy solution for instrument trading.
 
-The first 160 lines are API and functions that correspond to that particular app which I use to fetch my data.
-However you may plug in ANY online stock platform API data, and the code will just work!
+Here's a professional GitHub README.md for your project:
 
-Functions:
+🚀 Bitcoin Price Prediction Using LSTM
 
-1. calculate_volatility : uses the standard deviation to calculate amount of volatility (value between 0-1).
+Author: Alec Stovari, 2025
 
-   [Also, I have chosen to filter out stocks with prices over 2000 and prices below 5 (penny stocks). It is a personal choice, and it is upto you to decide.]
-2. filter_stocks_by_volatility : helper function for above
-3. lower_circ_stocks : fetches  all stocks that are below certain percentile.
+📌 Overview
 
-At the watchlist, you have the option to give specific stock names, take the lowest circuit  stocks or those with highest volatility (or some combination of these).
+This project implements a Bitcoin price prediction model using an LSTM (Long Short-Term Memory) neural network. It leverages historical hourly price data from CoinGecko's API, extracts relevant features, and forecasts future prices with uncertainty bounds.
 
-4. Regression functions : will draw diagonal support-resistance lines for you per stock
+🔧 Features:
 
-   (This is quite difficult to explain, and I had to do some rigorous testing to get it to work.
-   But basically, based on the number of maxima and minima, and taking into account other factors like whether the stock is going down or up, it makes the decision to draw the line)
 
-5. adf_test : For performing augmented dickey fuller test
-6. create_dataset : to create a X,y dataset to plug into the neural network
+✅ Fetches Bitcoin price data (up to 90 days) from CoinGecko
 
-As of updating this, I have had 7 back to back profits of ~ 1300 - 3400 each.
+✅ Feature engineering: Adds price percentage change, rolling standard deviation, and price difference
+
+✅ Data normalization & sequence creation for time series forecasting
+
+✅ LSTM model with two layers and dropout for better generalization
+
+✅ Train-Test split for evaluating model performance
+
+✅ Forecasts future prices with a retrained model using the entire dataset
+
+✅ Uncertainty estimation using standard deviation of prediction errors
+
+✅ Two plots:
+
+Train & Test vs. Predictions , 
+Train + Test + Forecasted Prices
+
+🏗️ Future Improvements
+
+- Add hyperparameter tuning for better accuracy
+- Support other cryptocurrencies (Ethereum, Litecoin, etc.)
+- Implement alternative models (GRU, Transformer-based models)
+- Enhance uncertainty quantification using Bayesian deep learning
+
+📜 License
+
+This code may not be used by anyone not in possession of the <b>LSTM for Market Forecasting: A Python deep learning guide</b> book : 
+
+https://www.amazon.com/dp/B0CDVFPH6X
